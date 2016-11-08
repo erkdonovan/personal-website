@@ -1,0 +1,33 @@
+
+
+$bluecol : #21c6f4;
+$pinkcol : #f44d79;
+$purplecol : #45223e; 
+$whitecol : #fff;
+$lightcol : #f6f7f8;
+
+//  font-family: 'Open Sans', sans-serif;
+
+$basicfont: 'Open Sans', sans-serif;
+$headerfont: 'Open Sans', sans-serif;
+
+$basefontsize: 14px;
+
+// Grays
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #eee;
+$white: #fff;
+
+
+
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+

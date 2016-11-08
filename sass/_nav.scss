@@ -1,0 +1,89 @@
+.menu {
+  background: $bluecol;
+  text-align: center;
+  padding: 10px;
+  ul {
+    margin: 0;
+    li {
+      list-style: none;
+      display: inline;
+      text-transform: uppercase;
+      padding: 20px;
+      a {
+        color: $whitecol;
+        text-decoration: none;
+        &:hover {
+          color: $purplecol;
+        }
+      }
+    }
+  }
+}
+
+
+// FOOTER
+
+  .footer {
+    width: 100%;
+    padding: 50px 0;
+    background: $bluecol;
+    color: #fff;
+    display: table;
+    border-bottom: $purplecol solid 10px;
+
+    p {
+      font-size: 12px;
+      padding: 0;
+      margin: 0;
+    }
+
+    i {
+      color: white;
+    }
+  }
+
+  .footer_left {
+    @include column(4);
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer_right {
+    @include column(8);
+    padding: 0 50px;
+  }
+
+  .innerFooter {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .desktophidden {
+    display: none;
+  }
+
+  .social {
+    margin: 30px 0 10px;
+    article {
+      display: inline-block;
+    }
+    i {
+      margin: 5px;
+      &:hover {
+        color: $purplecol;
+      }
+    }
+  }
+
+.contact {
+  a {
+    text-transform: uppercase;
+    border: solid 2px white;
+    padding: 25px;
+    color: white;
+    &hover {
+      color: $purplecol;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.service-types {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  h1 {
+    text-transform: uppercase;
+    font-size: 90px;
+    text-align: left;
+    font-weight: 300;
+    color: $purplecol;
+    margin: 35px 0 45px;
+    padding: 0 30px;
+  }
+}
+
+.types {
+  background: $lightcol;
+    &:nth-child(even) {
+      background: white;
+    }
+  flex: 1 0 33%;
+  padding: 20px 30px;
+  margin: 0;
+  text-align: left;
+  i {
+    margin: 5px 0 25px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  h2::first-line {
+    font-weight: 700;
+  }
+}
+
+.services {
+  background: $purplecol;
+  color: $whitecol;
+  position: relative;
+  &:nth-child(even) {
+    background: $pinkcol;
+  }
+  i {
+    color: white;
+  }
+}
+
+.arrow {
+  position: relative;
+  left: 0;
+  transition: left ease 0.5s;
+}
+
+.services:hover .arrow {
+  left: 95%;
+}
+
+.packages {
+  color: $purplecol;
+  height: 650px;
+  padding: 70px 30px 50px;
+  position: relative;
+  i {
+    color: $purplecol;
+  }
+  ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0 10px;
+    li {
+      text-indent: -5px;
+      &:before {
+        content: "- ";
+        text-indent: -5px;
+        font-weight: 700;
+      }
+    }
+    & + h3 {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
+.testimonial {
+  color: white;
+  background: $pinkcol;
+  width: 100%;
+  height: 30vh;
+  h3 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 20px;
+  }
+  p {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  a {
+    color: black;
+  }
+  .quote {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .quote--2 {
+    margin: 0 auto;
+    width: 60%
+  }
+}
