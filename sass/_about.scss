@@ -1,0 +1,70 @@
+// ABOUT
+
+.about {
+  margin-top: 40px;
+  &__left {
+    width: 65%;
+    position: relative;
+    &--image {
+      img {
+        width: 75%;
+      }
+    }
+    &--headline {
+      position: absolute;
+      left: 50%;
+      top: 75px;
+      h1 {
+        font-size: 75px;
+        text-transform: uppercase;
+        line-height: 1.2;
+        color: $purplecol;
+        padding: 30px;
+        &:first-line {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  &__right {
+    width: 35%;
+    &--bio {
+      span {
+        color: $pinkcol;
+        font-weight: 700;
+      }
+    }
+    &--skills {
+      .skills__flex {
+        display: flex;
+        flex-wrap: wrap;
+        article {
+          flex-basis: 20%;
+          text-align: center;
+          padding: 10px;
+          font-size: 4rem;
+          /*Style and position the date-title hover states*/
+          i {
+            position: relative;
+            color: $purplecol;
+          }
+          i[data-title]:hover:after {
+            content: attr(data-title);
+            color: black;
+            font-size: 15px;
+            padding: 5px;
+            font-family: $basicfont;
+            position: absolute;
+            top: -21px;
+            right: -30px;
+            border-radius: 5%;
+          }
+          /*These icons are not from the same family, it needed to be adjusted*/
+          .fa-map-marker {
+            vertical-align: bottom;
+          }
+        }
+      }
+    }
+  }
+}

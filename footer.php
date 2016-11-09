@@ -1,42 +1,41 @@
 
-<div class="footer">
-  <div class="innerFooter">
-  <div class="footer_left">
-    <div class="innerWrapper">
-      <p><strong>Email</strong></p>
-      <p><?php the_field('email_address', 'option'); ?></p>
-      <section class="social">
-        <?php 
-          while(have_rows('social_repeater', 'option')) : the_row();
-        ?>
+  <footer class="footer">
+    <div class="container footer__flex">
+      <section class="footer__left">
+        <p><strong>Email</strong></p>
+        <p><?php the_field('email_address', 'option'); ?></p>
+        <section class="footer__left--social">
           <?php 
-             // vars
-            $type = get_sub_field('type', 'option');
-            $icon = get_sub_field('icon', 'option');
-            $link = get_sub_field('link', 'option');
+            while(have_rows('social_repeater', 'option')) : the_row();
           ?>
-          
-          <article>
-            <a href="<?php echo $link ?>" alt="<?php echo $type ?>"><i class="fa <?php echo $icon ?> fa-2x" aria-hidden="true"></i></a>
-          </article>
-          
-        <?php endwhile ?>
-     </section>
-      <p><i class="fa fa-copyright"></i> <?php the_field('copy_right_info', 'option'); ?></p>
-      <p>Designed by: <a href="<?php the_field('designer_url', 'option') ?>"></a><?php the_field('designed_by', 'option') ?></p>
+            <?php 
+               // vars
+              $type = get_sub_field('type', 'option');
+              $icon = get_sub_field('icon', 'option');
+              $link = get_sub_field('link', 'option');
+            ?>
+            
+            <article>
+              <a href="<?php echo $link ?>" alt="<?php echo $type ?>"><i class="fa <?php echo $icon ?> fa-2x" aria-hidden="true"></i></a>
+            </article>
+            
+          <?php endwhile ?>
+        </section>
+        <!-- <p>Designed by: <a href="<?php //the_field('designer_url', 'option') ?>"></a><?php //the_field('designed_by', 'option') ?></p> -->
+        <?php $succulent = get_field('succulent_image', 'option') ?>
+        <img src="<?php echo $succulent['url'] ?>" alt="">
+        <p><i class="fa fa-copyright"></i> <?php the_field('copy_right_info', 'option'); ?></p>
+      </section>
+      <section class="footer__right">
+        <article class="footer__right--contact" id="contact">
+          <?php $contactForm = get_field('contact_form_shortcode', 'option');
+              $contactForm = trim($contactForm);
+           ?>
+          <?php echo do_shortcode($contactForm); ?>
+        </article>
+      </section>
     </div>
-  </div>
-
-  <div class="footer_right">
-    <section class="contact">
-      <?php $contactForm = get_field('contact_form_shortcode', 'option');
-          $contactForm = trim($contactForm);
-       ?>
-      <?php echo do_shortcode($contactForm); ?>
-    </section>
-  </div>
-
-</div>
+  </footer>
 
 </body>
 

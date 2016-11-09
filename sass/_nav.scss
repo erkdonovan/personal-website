@@ -1,89 +1,111 @@
-.menu {
-  background: $bluecol;
-  text-align: center;
-  padding: 10px;
-  ul {
-    margin: 0;
-    li {
-      list-style: none;
-      display: inline;
-      text-transform: uppercase;
-      padding: 20px;
-      a {
-        color: $whitecol;
-        text-decoration: none;
-        &:hover {
-          color: $purplecol;
+.header {
+  &__menu {
+    background: $bluecol;
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    &--logo {
+      max-width: 250px;
+      img {
+        width: 100%;
+      }
+    }
+    &--list {
+      ul {
+        margin: 0;
+        li {
+          list-style: none;
+          display: inline;
+          text-transform: uppercase;
+          padding: 20px;
+          a {
+            color: $whitecol;
+            text-decoration: none;
+            font-weight: 700;
+            &:hover {
+              color: $purplecol;
+              text-decoration: underline;
+            }
+          }
         }
+      }
+    }
+  }
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: $purplecol;
+    opacity: 0.7;
+    z-index: 2;
+  }
+  &__heroimage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    z-index: 1;
+    &--content {
+      @include centercenter;
+      text-align: center;
+      color: $whitecol;
+      z-index: 3;
+      img {
+        width: 75%;
+      }
+      h3 {
+        text-transform: none;
+        font-size: 1.8rem;
       }
     }
   }
 }
 
 
-// FOOTER
-
-  .footer {
-    width: 100%;
-    padding: 50px 0;
-    background: $bluecol;
-    color: #fff;
-    display: table;
-    border-bottom: $purplecol solid 10px;
-
-    p {
-      font-size: 12px;
-      padding: 0;
-      margin: 0;
-    }
-
-    i {
-      color: white;
-    }
+.footer {
+  padding: 50px 0;
+  background: $bluecol;
+  color: #fff;
+  border-bottom: $purplecol solid 10px;
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-
-  .footer_left {
-    @include column(4);
-    margin: 0;
+  p {
     padding: 0;
+    margin: 0;
   }
-
-  .footer_right {
-    @include column(8);
-    padding: 0 50px;
+  i {
+    color: $whitecol;
   }
-
-  .innerFooter {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .desktophidden {
-    display: none;
-  }
-
-  .social {
-    margin: 30px 0 10px;
-    article {
-      display: inline-block;
-    }
-    i {
-      margin: 5px;
-      &:hover {
-        color: $purplecol;
+  &__left{
+    flex: 0 0 40%;
+    &--social {
+      margin: 30px 0 10px;
+      article {
+        display: inline-block;
       }
+      i {
+        margin: 5px;
+        &:hover {
+          color: $purplecol;
+        }
+      }
+    } 
+    img {
+      width: 90px;
     }
   }
-
-.contact {
-  a {
-    text-transform: uppercase;
-    border: solid 2px white;
-    padding: 25px;
-    color: white;
-    &hover {
-      color: $purplecol;
-    }
+  &__right {
+    flex: 0 0 60%;
+    padding: 0 50px;
   }
 }

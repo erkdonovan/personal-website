@@ -1,0 +1,140 @@
+// PROJECTS
+.projects {
+  background: $lightcol;
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &--item {
+      flex: 0 0 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .button {
+        margin-bottom: 100px;
+      }
+      h3 {
+        font-weight: 700;
+      }
+    }
+  }
+  &__more {
+    padding: 50px 0 0;
+    text-align: right;
+    a {
+      padding: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+// BLOG
+.blog {
+  background: $lightcol;
+  .display-medium-owl-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .display-medium-item {
+      flex: 0 0 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-between;
+    }
+  }
+  .display-medium-title {
+    font-size: 1.8rem;
+    border-bottom: none !important;
+    margin: 0;
+  }
+}
+
+// TESTIMONIALS
+.testimonial {
+  color: white;
+  background-repeat: repeat;
+  width: 100%;
+  h3 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  p {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  a {
+    color: black;
+  }
+  .quote {
+    width: 100%;
+    padding: 20px 0;
+    &--item {
+      margin: 0 auto;
+      width: 60%;
+      &__icon {
+        position: relative;
+        padding-top: 20px;
+        &:before {
+          content: "\f10d";
+          font-family: FontAwesome;
+          color: #000;
+          opacity: 0.3;
+          font-size: 3rem;
+          position: absolute;
+          left: -30px;
+        }
+      }
+    }
+  }
+}
+
+// CONTACT
+input, textarea {
+  border: $whitecol solid 2px;
+  background: $bluecol;
+  color: $whitecol;
+  margin: 5px 0;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  height: 35px;
+  margin-right: 5px;
+}
+
+input[type=submit] {
+  display: inline-block;
+  color: $bluecol;
+  background: $whitecol;
+  width: 40%;
+  text-align: center;
+  float: right;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin: 10px 0;
+  vertical-align: top;
+}
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder {
+  color: $whitecol;
+}
+::-moz-input-placeholder, ::-moz-textarea-placeholder {
+  color: $whitecol;
+}
+:-moz-input-placeholder, :-moz-textarea-placeholder {
+  color: $whitecol;
+}
+:-ms-input-placeholder, :-ms-textarea-placeholder {
+  color: $whitecol;
+}

@@ -24,6 +24,10 @@
   <link type="image/png" href="<?php echo get_site_url();?>/wp-content/themes/erika-donovan/images/favicon.png" rel="icon">
 
   <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
+
+  <link href='http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
   
   <!-- FACEBOOK TAGS -->
   <meta property="og:title" content="Erika Donovan">
@@ -49,21 +53,33 @@
 <body <?php body_class(); ?>>
 
 <div class="header">
-  
- <div class="menu" role="navigation">
-  <div class="menu__logo">
-     <?php 
-        $custom_logo_id = get_theme_mod( 'custom_logo' );
-        $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-           ?>
-     <img src="<?php echo $image[0]; ?>" alt="">
+  <div class="header__menu" role="navigation">
+    <div class="header__menu--logo">
+       <?php 
+          $custom_logo_id = get_theme_mod( 'custom_logo' );
+          $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+             ?> 
+       <a href="<?php bloginfo('url'); ?>"><img src="<?php echo $image[0]; ?>" alt="<?php bloginfo('name'); ?>"></a>
+    </div>
+    <div class="header__menu--list">
+      <?php
+            wp_nav_menu( array('container_class' => 'menu-footer',
+            'theme_location' => 'primary') ); ?>
+    </div>
   </div>
-  <div class="menu__list">
-    <?php
-          wp_nav_menu( array('container_class' => 'menu-footer',
-          'theme_location' => 'primary') ); ?>
+  <?php $heroImage = get_field('main_hero_image'); ?>
+  <?php $imagePosition = get_field('hero_image_position'); ?>
+  <div class="header__heroimage" style="background-image: url(<?php echo $heroImage['url'] ?>); background-position: <?php echo $imagePosition ?>;">
+  <div class="overlay"></div>
+    <div class="header__heroimage--content">
+      <?php $namelogo = get_field('name_logo'); ?>
+      <?php if( $namelogo ): ?>
+        <img src="<?php echo $namelogo['url']; ?>" alt="<?php echo $namelogo['alt']; ?>">
+      <?php else: ?>
+        <h1><?php the_title(); ?></h1>
+      <?php endif; ?>
+      <h2><?php the_field('hero_text'); ?></h2>
+    </div>
   </div>
-</div>
-
 </div><!--/.header-->
 
