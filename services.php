@@ -23,8 +23,6 @@
         
       <?php endwhile ?>
     </div>
-  </div>
-  <div class="container">
     <h2><?php the_field('management_title', 618); ?></h2>
     <div class="flex-container packages__types">
       <?php 
@@ -38,7 +36,7 @@
         ?>
         
         <article class="packages__types--item">
-          <div class="packages__types">
+          <div class="packages__types--content">
             <i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>
             <h3><?php echo $title ?></h3>
             <?php echo $details ?>

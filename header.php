@@ -62,9 +62,17 @@
        <a href="<?php bloginfo('url'); ?>"><img src="<?php echo $image[0]; ?>" alt="<?php bloginfo('name'); ?>"></a>
     </div>
     <div class="header__menu--list">
-      <?php
-            wp_nav_menu( array('container_class' => 'menu-footer',
-            'theme_location' => 'primary') ); ?>
+      <div class="display__desktop">
+        <?php
+              wp_nav_menu( array('theme_location' => 'primary') ); ?>
+      </div>
+      <div class="display__mobile">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        <div class="display__mobile--menu">
+          <?php
+                wp_nav_menu( array('theme_location' => 'primary') ); ?>
+        </div>
+      </div>
     </div>
   </div>
   <?php $heroImage = get_field('main_hero_image'); ?>

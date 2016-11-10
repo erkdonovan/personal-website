@@ -116,3 +116,24 @@
     background-image: url('http://erikadonovan.com/wp-content/uploads/2016/11/photo-1457305237443-44c3d5a30b89.jpeg') !important;
   }
 }
+
+.display__mobile {
+  display: none;
+  position: relative;
+  i {
+    color: $whitecol;
+  }
+  ul {
+    padding: 0;
+    li {
+      display: block;
+    }
+  }
+  &--menu {
+      display: none;
+  }
+  .nav-open {
+      display: block;
+  }
+}
+

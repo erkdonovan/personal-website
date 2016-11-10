@@ -64,9 +64,11 @@ body, html {
     background: $purplecol;
     padding: 15px;
     border-radius: 10px;
+    transition: ease all 0.3s;
     &:hover {
       color: $whitecol;
       background: $bluecol;
+      text-decoration: none;
     }
   }
 }
