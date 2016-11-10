@@ -1,5 +1,7 @@
-<main class="about" id="about">
-  <div class="container flex-container">
+
+  <div class="container">
+    <h2>About me</h2>
+    <div class="flex-container">
       <div class="about__left">
         <div class="about__left--image">
           <?php $profileImage = get_field('profile_image', 690); ?>
@@ -8,7 +10,7 @@
         <div class="about__left--headline">
           <h1><?php the_field('headline_title', 690); ?></h1>
         </div>
-      </div>
+      </div> <!-- about left ends -->
 
       <div class="about__right">
         <div class="about__right--bio">
@@ -35,7 +37,6 @@
           </div> 
           <!-- SKILLS ENDS -->
         </div>
-      </div>
-    </div>
+      </div> <!-- about right ends -->
+    </div> <!-- flex ends -->
   </div>
-</main>

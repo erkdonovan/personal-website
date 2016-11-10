@@ -1,4 +1,4 @@
-<main class="services" id="services">
+
   <div class="container">
     <h2><?php the_field('development_title', 618); ?></h2>
     <div class="flex-container packages__types">
@@ -54,5 +54,3 @@
       <?php the_field('hourly_rate_text', 618); ?>
     </div>
   </div>
-
-</main>
