@@ -71,6 +71,10 @@ body, html {
   }
 }
 
+section:nth-child(odd) {
+  background: $lightcol;
+}
+
 /*I have hidden text on my page that is read for screen readers but hidden from viewers*/
 .aoda {
   width: 1px;

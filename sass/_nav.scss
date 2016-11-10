@@ -1,3 +1,4 @@
+
 .header {
   &__menu {
     background: $bluecol;
@@ -58,7 +59,7 @@
       color: $whitecol;
       z-index: 3;
       img {
-        width: 75%;
+        width: 100%;
       }
       h3 {
         text-transform: none;
@@ -67,7 +68,6 @@
     }
   }
 }
-
 
 .footer {
   padding: 50px 0;
@@ -107,5 +107,12 @@
   &__right {
     flex: 0 0 60%;
     padding: 0 50px;
+  }
+}
+
+.tag {
+  .header__heroimage {
+    background-position: center;
+    background-image: url('http://erikadonovan.com/wp-content/uploads/2016/11/photo-1457305237443-44c3d5a30b89.jpeg') !important;
   }
 }

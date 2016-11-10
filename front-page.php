@@ -55,7 +55,7 @@
           <div>
             <h3><?php the_title(); ?></h3>
             <?php the_post_thumbnail( array(250) ); ?>
-            <p><?php the_tags( 'Code Used: ', ', ', '<br />' ); ?></p>
+            <p><?php the_tags( 'Built with: ', ', ', '<br />' ); ?></p>
             <?php the_content(); ?>
 
             <?php $link = get_field('link_to_project'); ?>
@@ -80,9 +80,17 @@
 </section>
 <!-- FEATURED WORK ENDS -->
 
-<?php  get_template_part( 'about' ); ?>
+<!-- BIO STARTS -->
+<section class="about extrapadding">
+  <?php  get_template_part( 'about' ); ?>
+</section> 
+<!-- BIO ENDS -->
 
-<?php   get_template_part( 'services' ); ?>
+<!-- PACKAGES STARTS -->
+<section class="packages">
+  <?php   get_template_part( 'services' ); ?>
+</section>
+<!-- PACKAGES ENDS -->
 
 <!-- BLOG POSTS STARTS -->
 <section class="blog extrapadding" id="blog">

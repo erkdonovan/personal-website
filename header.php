@@ -77,7 +77,9 @@
         <img src="<?php echo $namelogo['url']; ?>" alt="<?php echo $namelogo['alt']; ?>">
       <?php else: ?>
         <h1><?php the_title(); ?></h1>
+        <h1><?php echo $tag ?></h1>
       <?php endif; ?>
+
       <h2><?php the_field('hero_text'); ?></h2>
     </div>
   </div>

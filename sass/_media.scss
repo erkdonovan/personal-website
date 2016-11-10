@@ -1,14 +1,26 @@
-@media (max-width: 960px) {
+@media (max-width: 525px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .about__left, .about__right {
+    width: 100%;
+  }
+
+  .footer__left, .footer__right, .packages__types--item, .projects__flex--item, .services-types--item, .blog .display-medium-owl-carousel .display-medium-item {
+    flex: 0 0 100%;
+  }
+
+  .footer__right {
+    margin-top: 25px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .footer__left {
+    text-align: center;
+  }
 
 }
 
-
-@media (max-width: 768px) {
-
-}
-
-
-@media (max-width: 480px) {
-
-
-}

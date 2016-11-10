@@ -1,70 +1,58 @@
 <main class="services" id="services">
-
-  <!-- DEVELOPMENT STARTS -->
-  <section class="packages">
-    <div class="container">
-      <h2><?php the_field('development_title', 618); ?></h2>
-      <div class="flex-container packages__types">
+  <div class="container">
+    <h2><?php the_field('development_title', 618); ?></h2>
+    <div class="flex-container packages__types">
+      <?php 
+        while(have_rows('development_repeater', 618)) : the_row();
+      ?>
         <?php 
-          while(have_rows('development_repeater', 618)) : the_row();
+           // vars
+          $title = get_sub_field('title');
+          $details = get_sub_field('details');
+          $price = get_sub_field('price');
         ?>
-          <?php 
-             // vars
-            $title = get_sub_field('title');
-            $details = get_sub_field('details');
-            $price = get_sub_field('price');
-          ?>
-          
-          <article class="packages__types--item">
-            <div class="packages__types--content">
-              <i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>
-              <h3><?php echo $title ?></h3>
-              <?php echo $details ?>
-            </div>
-            <h4><?php echo $price ?></h4>
-          </article>
-          
-        <?php endwhile ?>
-      </div>
+        
+        <article class="packages__types--item">
+          <div class="packages__types--content">
+            <i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>
+            <h3><?php echo $title ?></h3>
+            <?php echo $details ?>
+          </div>
+          <h4><?php echo $price ?></h4>
+        </article>
+        
+      <?php endwhile ?>
     </div>
-  </section>
-  <!-- DEVELOPMENT ENDS -->
-
-  <!-- MANAGEMENT STARTS -->
-  <section class="packages">
-    <div class="container">
-      <h2><?php the_field('management_title', 618); ?></h2>
-      <div class="flex-container packages__types">
+  </div>
+  <div class="container">
+    <h2><?php the_field('management_title', 618); ?></h2>
+    <div class="flex-container packages__types">
+      <?php 
+        while(have_rows('management_repeater', 618)) : the_row();
+      ?>
         <?php 
-          while(have_rows('management_repeater', 618)) : the_row();
+           // vars
+          $title = get_sub_field('title');
+          $details = get_sub_field('details');
+          $price = get_sub_field('price');
         ?>
-          <?php 
-             // vars
-            $title = get_sub_field('title');
-            $details = get_sub_field('details');
-            $price = get_sub_field('price');
-          ?>
-          
-          <article class="packages__types--item">
-            <div class="packages__types">
-              <i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>
-              <h3><?php echo $title ?></h3>
-              <?php echo $details ?>
-            </div>
-            <h4><?php echo $price ?></h4>
-          </article>
-          
-        <?php endwhile ?>
-      </div>
+        
+        <article class="packages__types--item">
+          <div class="packages__types">
+            <i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>
+            <h3><?php echo $title ?></h3>
+            <?php echo $details ?>
+          </div>
+          <h4><?php echo $price ?></h4>
+        </article>
+        
+      <?php endwhile ?>
     </div>
-  </section>
-  <!-- MANAGEMENT ENDS -->
-
-
-  <section class="hourlyrate">
+  </div>
+  <div class="hourlyrate">
     <div class="container">
       <?php the_field('hourly_rate_text', 618); ?>
     </div>
-  </section>
+  </div>
 
 </main>

@@ -1,10 +1,10 @@
 
   <footer class="footer">
     <div class="container footer__flex">
-      <section class="footer__left">
+      <div class="footer__left">
         <p><strong>Email</strong></p>
         <p><?php the_field('email_address', 'option'); ?></p>
-        <section class="footer__left--social">
+        <div class="footer__left--social">
           <?php 
             while(have_rows('social_repeater', 'option')) : the_row();
           ?>
@@ -20,20 +20,20 @@
             </article>
             
           <?php endwhile ?>
-        </section>
-        <!-- <p>Designed by: <a href="<?php //the_field('designer_url', 'option') ?>"></a><?php //the_field('designed_by', 'option') ?></p> -->
+        </div>
+        <p>Designed by: <a href="<?php the_field('designer_url', 'option') ?>"></a><?php the_field('designed_by', 'option') ?></p>
         <?php $succulent = get_field('succulent_image', 'option') ?>
         <img src="<?php echo $succulent['url'] ?>" alt="">
         <p><i class="fa fa-copyright"></i> <?php the_field('copy_right_info', 'option'); ?></p>
-      </section>
-      <section class="footer__right">
+      </div>
+      <div class="footer__right">
         <article class="footer__right--contact" id="contact">
           <?php $contactForm = get_field('contact_form_shortcode', 'option');
               $contactForm = trim($contactForm);
            ?>
           <?php echo do_shortcode($contactForm); ?>
         </article>
-      </section>
+      </div>
     </div>
   </footer>
 
