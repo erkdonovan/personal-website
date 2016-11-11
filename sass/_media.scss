@@ -25,7 +25,7 @@
   .container {
     width: 90%;
   }
-  
+
   .display {
     &__desktop {
     display: none;
@@ -33,6 +33,19 @@
     &__mobile {
       display: block;
     }
+  }
+
+  .about__left--headline {
+    position: static;
+    text-align: center;
+  }
+
+  .about__left, .about__right {
+    flex: 0 0 50%;
+  }
+
+  .projects__flex--item {
+    flex: 0 0 33%;
   }
 
 }

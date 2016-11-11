@@ -3,12 +3,12 @@
     <h2>About me</h2>
     <div class="flex-container">
       <div class="about__left">
+        <div class="about__left--headline">
+          <h1><?php the_field('headline_title', 690); ?></h1>
+        </div>
         <div class="about__left--image">
           <?php $profileImage = get_field('profile_image', 690); ?>
           <img src="<?php echo $profileImage['url'] ?>" alt="<?php echo $profileImage['alt'] ?>">
-        </div>
-        <div class="about__left--headline">
-          <h1><?php the_field('headline_title', 690); ?></h1>
         </div>
       </div> <!-- about left ends -->
 
@@ -39,4 +39,6 @@
         </div>
       </div> <!-- about right ends -->
     </div> <!-- flex ends -->
+    <div class="about__right--skills">
+    </div>
   </div>

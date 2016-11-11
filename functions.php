@@ -370,3 +370,40 @@ add_theme_support( 'custom-logo', array(
 	'flex-width'  => true,
 	'header-text' => array( 'site-title', 'site-description' ),
 ) );
+
+add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
+/* Add all our JavaScript files here.
+We'll let WordPress add them to our templates automatically instead
+of writing our own script tags in the header and footer. */
+
+function hackeryou_scripts() {
+
+  //Don't use WordPress' local copy of jquery, load our own version from a CDN instead
+  wp_deregister_script('jquery');
+  wp_enqueue_script(
+    'jquery',
+    "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js",
+    false, //dependencies
+    null, //version number
+    true //load in footer
+  );
+
+  wp_enqueue_script(
+    'plugins', //handle
+    get_template_directory_uri() . '/js/plugins.js', //source
+    false, //dependencies
+    null, // version number
+    true //load in footer
+  );
+  
+  wp_enqueue_script(
+    'scripts', //handle
+    get_template_directory_uri() . '/js/main.min.js', //source
+    array( 'jquery', 'plugins'  ), //dependencies
+    null, // version number
+    true //load in footer
+  );
+
+}
+
+add_action( 'wp_enqueue_scripts', 'hackeryou_scripts');

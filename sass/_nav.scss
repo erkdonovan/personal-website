@@ -131,6 +131,11 @@
   }
   &--menu {
       display: none;
+      position: absolute;
+      background: $bluecol;
+      right: -10px;
+      top: 42px;
+      text-align: right;
   }
   .nav-open {
       display: block;

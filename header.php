@@ -21,12 +21,9 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
 
   <!-- FAV ICON -->
-  <link type="image/png" href="<?php echo get_site_url();?>/wp-content/themes/erika-donovan/images/favicon.png" rel="icon">
 
   <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
-
   <link href='http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
-
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
   
   <!-- FACEBOOK TAGS -->
@@ -39,13 +36,7 @@
   
   <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); wp_head(); ?>
 
-  <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
-
-  <!-- Load jQuery and our own scripts file -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="<?php bloginfo('stylesheet_directory');?>/js/scripts.js"></script>
-
- <script src="https://use.fontawesome.com/5ea7e68365.js"></script>
+  <script src="https://use.fontawesome.com/5ea7e68365.js"></script>
 
 </head>
 
