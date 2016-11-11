@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <div class="container">
+  <div class="container projects">
     <div class="projects__flex">
       <?php
 
