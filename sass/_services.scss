@@ -1,14 +1,14 @@
 .services-types {
-  background: $purplecol;
+  background: $blackcol;
   width: 100%;
   color: $white;
   &--item {
     flex: 1 0 33.33%;
     padding: 20px;
     position: relative;
-    background: $purplecol;
+    background: $blackcol;
       &:nth-child(even) {
-        background: $pinkcol;
+        background: $goldlightcol;
       }
     a, a:hover {
       color: $whitecol;
@@ -35,7 +35,7 @@
 
 
 .packages {
-  color: $purplecol;
+  color: $blackcol;
   position: relative;
   padding: 50px 0;
   &__types {
@@ -60,7 +60,7 @@
       }
       i {
         margin: 5px 0 25px;
-        color: $purplecol;
+        color: $blackcol;
       }
       ul {
         margin: 0;
@@ -80,14 +80,18 @@
 }
 
 .hourlyrate {
-  color: $pinkcol;
+  color: $goldlightcol;
   text-align: center;
   h3 {
     font-weight: 700;
     padding-bottom: 45px;
     a {
-      color: $bluecol;
+      color: $blackcol;
       text-decoration: underline;
+      transition: ease color 0.3s;
+      &:hover {
+        color: $golddarkcol;
+      }
     }
   }
 }

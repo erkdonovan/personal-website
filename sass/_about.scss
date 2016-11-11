@@ -18,7 +18,7 @@
         font-size: 75px;
         text-transform: uppercase;
         line-height: 1.2;
-        color: $purplecol;
+        color: $blackcol;
         padding: 30px;
         &:first-line {
           font-weight: 700;
@@ -30,7 +30,7 @@
     width: 35%;
     &--bio {
       span {
-        color: $pinkcol;
+        color: $goldlightcol;
         font-weight: 700;
       }
     }
@@ -46,7 +46,7 @@
           /*Style and position the date-title hover states*/
           i {
             position: relative;
-            color: $purplecol;
+            color: $blackcol;
           }
           i[data-title]:hover:after {
             content: attr(data-title);

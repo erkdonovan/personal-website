@@ -62,8 +62,8 @@
 
 // TESTIMONIALS
 .testimonial {
-  color: white;
-  background-repeat: repeat;
+  color: $blackcol;
+  background: $golddarkcol;
   width: 100%;
   h3 {
     text-transform: uppercase;
@@ -104,7 +104,7 @@
 // CONTACT
 input, textarea {
   border: $whitecol solid 2px;
-  background: $bluecol;
+  background: $blackcol;
   color: $whitecol;
   margin: 5px 0;
 }
@@ -117,14 +117,14 @@ input[type=text], input[type=email] {
 
 input[type=submit] {
   display: inline-block;
-  color: $bluecol;
+  color: $blackcol;
   background: $whitecol;
   width: 40%;
   text-align: center;
   float: right;
   transition: ease background 0.3s;
   &:hover {
-    background: $pinkcol;
+    background: $goldlightcol;
   }
 }
 
