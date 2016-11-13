@@ -29,9 +29,11 @@
   &__right {
     width: 35%;
     &--bio {
-      span {
+      h6 {
         color: $goldlightcol;
         font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 1.5;
       }
     }
     &--skills {

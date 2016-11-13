@@ -45,7 +45,7 @@
 
 <!-- PACKAGES STARTS -->
 <section class="packages" id="services">
-  <?php   get_template_part( 'services' ); ?>
+  <?php  get_template_part( 'services' ); ?>
 </section>
 <!-- PACKAGES ENDS -->
 

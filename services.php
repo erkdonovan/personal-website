@@ -23,6 +23,7 @@
         
       <?php endwhile ?>
     </div>
+    <p class="disclaimer"><?php the_field('disclaimer', 618) ?></p>
     <h2><?php the_field('management_title', 618); ?></h2>
     <div class="flex-container packages__types">
       <?php 
