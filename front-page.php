@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- SERVICES STARTS -->
-<section class="services-types">
+<div class="services-types">
   <div class="container flex-container">
     <?php 
       while(have_rows('services_menu')) : the_row();
@@ -26,7 +26,7 @@
       
     <?php endwhile ?>
   </div> 
-</section>
+</div>
 <!-- SERVICES ENDS -->
 
 <!-- CALL TO ACTION STARTS -->
@@ -36,6 +36,18 @@
   </div>
 </section>
 <!-- CALL TO ACTION ENDS -->
+
+<!-- BIO STARTS -->
+<section class="about extrapadding"  id="about">
+  <?php  get_template_part( 'about' ); ?>
+</section> 
+<!-- BIO ENDS -->
+
+<!-- PACKAGES STARTS -->
+<section class="packages" id="services">
+  <?php   get_template_part( 'services' ); ?>
+</section>
+<!-- PACKAGES ENDS -->
 
 <!-- FEATURED WORK STARTS -->
 <section class="projects extrapadding" id="work">
@@ -80,18 +92,6 @@
   </div>
 </section>
 <!-- FEATURED WORK ENDS -->
-
-<!-- BIO STARTS -->
-<section class="about extrapadding"  id="about">
-  <?php  get_template_part( 'about' ); ?>
-</section> 
-<!-- BIO ENDS -->
-
-<!-- PACKAGES STARTS -->
-<section class="packages" id="services">
-  <?php   get_template_part( 'services' ); ?>
-</section>
-<!-- PACKAGES ENDS -->
 
 <!-- BLOG POSTS STARTS -->
 <section class="blog extrapadding" id="blog">

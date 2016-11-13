@@ -1,17 +1,23 @@
 .services-types {
-  background: $blackcol;
+  background: $goldlightcol;
   width: 100%;
-  color: $white;
   &--item {
     flex: 1 0 33.33%;
     padding: 20px;
     position: relative;
-    background: $blackcol;
+    background: $goldlightcol;
       &:nth-child(even) {
-        background: $goldlightcol;
+        background: $blackcol;
+        color: $whitecol;
+        a, a:hover {
+          color: $whitecol;
+        }
+        i {
+          color: $whitecol;
+        }
       }
     a, a:hover {
-      color: $whitecol;
+      color: $blackcol;
       text-decoration: none;
     }
     h3 {
@@ -20,7 +26,7 @@
       }
     }
     i {
-      color: $whitecol;
+      color: $blackcol;
     }
     &:hover .arrow {
       left: 95%;
