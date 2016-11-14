@@ -144,6 +144,9 @@
       right: -10px;
       top: 42px;
       text-align: right;
+      a:hover {
+        color: $blackcol;
+      }
   }
   .nav-open {
       display: block;
