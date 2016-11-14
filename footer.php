@@ -28,10 +28,15 @@
       </div>
       <div class="footer__right">
         <article class="footer__right--contact" id="contact">
-          <?php $contactForm = get_field('contact_form_shortcode', 'option');
-              $contactForm = trim($contactForm);
-           ?>
-          <?php echo do_shortcode($contactForm); ?>
+          <form action="http://www.focuspocus.io/magic/a26503eefe3852b2b4370a04a7f7252e" method="POST" enctype="multipart/form-data">
+            <label for="fullNname">Name:</label>
+            <input type="text" name="Name" id="fullName">
+            <label for="email">Email:</label>
+            <input type="email" name="Email" id="email"/>
+            <label for="message">Message:</label>
+            <textarea name="yourmessage" cols="40" rows="10"aria-invalid="false" id="Message"></textarea>
+            <input type="submit" value="Send">
+          </form>
         </article>
       </div>
     </div>
