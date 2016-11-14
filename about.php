@@ -16,29 +16,27 @@
         <div class="about__right--bio">
           <?php the_field('about_bio', 690); ?>
         </div>
-        <div class="about__right--skills">
-          <!-- SKILLS STARTS -->
-          <h3>Skills</h3>
-          <div class="skills__flex">
-            <?php 
-              while(have_rows('skills_repeater', 690)) : the_row();
-            ?>
-              <?php 
-                 // vars
-                $icon = get_sub_field('icon');
-                $aoda = get_sub_field('aoda_text');
-              ?>
-            
-              <article>
-                <i class="<?php echo $icon ?>" aria-hidden="true" data-title="<?php echo $aoda ?>"></i>
-                <p class="aoda"><?php echo $aoda ?></p>
-              </article>
-            <?php endwhile ?>
-          </div> 
-          <!-- SKILLS ENDS -->
-        </div>
       </div> <!-- about right ends -->
     </div> <!-- flex ends -->
     <div class="about__right--skills">
+      <!-- SKILLS STARTS -->
+      <h3>Skills</h3>
+      <div class="skills__flex">
+        <?php 
+          while(have_rows('skills_repeater', 690)) : the_row();
+        ?>
+          <?php 
+             // vars
+            $icon = get_sub_field('icon');
+            $aoda = get_sub_field('aoda_text');
+          ?>
+        
+          <article>
+            <i class="<?php echo $icon ?>" aria-hidden="true" data-title="<?php echo $aoda ?>"></i>
+            <p class="aoda"><?php echo $aoda ?></p>
+          </article>
+        <?php endwhile ?>
+      </div> 
+      <!-- SKILLS ENDS -->
     </div>
   </div>

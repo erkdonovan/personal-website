@@ -3,7 +3,7 @@
   &__flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 30px;
     &--item {
       flex: 0 0 31%;
@@ -102,11 +102,20 @@
 }
 
 // CONTACT
+label {
+  font-size: 1.4rem;
+  color: $goldlightcol;
+}
+
 input, textarea {
   border: $whitecol solid 2px;
   background: $blackcol;
   color: $whitecol;
   margin: 5px 0;
+  &:focus {
+    background: $goldlightcol;
+    outline: none;
+  }
 }
 
 input[type=text], input[type=email] {

@@ -16,7 +16,8 @@
         <div class="projects__flex--item">
           <div>
             <h3><?php the_title(); ?></h3>
-            <?php the_post_thumbnail( array(250) ); ?>
+            <?php $image = get_field('main_hero_image'); ?>
+            <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>">
             <p><?php the_tags( 'Built with: ', ', ', '<br />' ); ?></p>
             <?php the_content(); ?>
 
