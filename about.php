@@ -37,6 +37,5 @@
           </article>
         <?php endwhile ?>
       </div> 
-      <!-- SKILLS ENDS -->
     </div>
   </div>

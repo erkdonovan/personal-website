@@ -13,7 +13,7 @@
         if($portfolioLoop->have_posts()) while($portfolioLoop->have_posts()) : $portfolioLoop->the_post();
         ?>
 
-        <div class="projects__flex--item">
+        <div class="projects__flex--item projects__page">
           <div>
             <h3><?php the_title(); ?></h3>
             <?php $image = get_field('main_hero_image'); ?>
@@ -25,7 +25,7 @@
           </div>
           <div class="button">
             <?php if( $link ): ?>
-              <a href="<?php echo $link; ?>">
+              <a href="<?php echo $link; ?>" target="_blank">
                 <span>View It</span>
               </a>
             <?php endif; ?>

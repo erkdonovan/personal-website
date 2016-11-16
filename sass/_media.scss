@@ -2,6 +2,10 @@
   .about__left--headline {
     left: 40%;
   }
+
+  .header__heroimage--content {
+    width: 75%;
+  }
 }
 
 @media (max-width: 840px) {
@@ -31,11 +35,18 @@
     flex: 0 0 33%;
   }
 
+  .projects__page {
+    flex: 0 0 47%;
+  }
 }
 
 @media (max-width: 605px) {
   .about__left, .about__right {
     flex: 0 0 100%;
+  }
+
+  .about__right--skills .skills__flex article {
+    flex-basis: auto;
   }
 }
 
@@ -58,6 +69,10 @@
 
   .footer__left {
     text-align: center;
+  }
+
+  .about__right--skills .skills__flex article {
+    flex: 1 0 auto;
   }
 
 }

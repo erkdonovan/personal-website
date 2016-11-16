@@ -60,15 +60,15 @@ body, html {
   margin-top: 30px;
   a {
     color: $whitecol;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 700;
     background: $goldlightcol;
     padding: 15px;
     border-radius: 10px;
     transition: ease all 0.3s;
     &:hover {
-      color: $whitecol;
-      background: $golddarkcol;
+      color: $goldlightcol;
+      background: $blackcol;
       text-decoration: none;
     }
   }

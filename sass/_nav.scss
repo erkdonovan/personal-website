@@ -28,9 +28,22 @@
             color: $whitecol;
             text-decoration: none;
             font-weight: 700;
+            position: relative;
+            &::after {
+              content: '';
+              width: 0;
+              height: 2px;
+              bottom: -7px;
+              left: 0;
+              position: absolute;
+              background: $goldlightcol;
+              transition: ease width 0.3s;
+            }
             &:hover {
               color: $goldlightcol;
-              text-decoration: underline;
+            }
+            &:hover::after {
+              width: 100%;
             }
           }
         }
@@ -58,6 +71,7 @@
       text-align: center;
       color: $whitecol;
       z-index: 3;
+      width: 50%;
       img {
         width: 100%;
       }
@@ -96,7 +110,7 @@
       i {
         margin: 5px;
         &:hover {
-          color: $blackcol;
+          color: $goldlightcol;
         }
       }
     } 

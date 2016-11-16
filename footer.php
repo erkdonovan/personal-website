@@ -16,12 +16,12 @@
             ?>
             
             <article>
-              <a href="<?php echo $link ?>" alt="<?php echo $type ?>"><i class="fa <?php echo $icon ?> fa-2x" aria-hidden="true"></i></a>
+              <a href="<?php echo $link ?>" alt="<?php echo $type ?>" target="_blank"><i class="fa <?php echo $icon ?> fa-2x" aria-hidden="true"></i></a>
             </article>
             
           <?php endwhile ?>
         </div>
-        <p>Designed by: <a href="<?php the_field('designer_url', 'option') ?>"></a><?php the_field('designed_by', 'option') ?></p>
+        <p>Designed by: <a href="<?php the_field('designer_url', 'option') ?>" target="_blank"><?php the_field('designed_by', 'option') ?></a></p>
         <?php $succulent = get_field('succulent_image', 'option') ?>
         <img src="<?php echo $succulent['url'] ?>" alt="">
         <p><i class="fa fa-copyright"></i> <?php the_field('copy_right_info', 'option'); ?></p>

@@ -15,7 +15,7 @@
         </div>
         <div class="button">
           <?php if( $link ): ?>
-            <a href="<?php echo $link; ?>">
+            <a href="<?php echo $link; ?>" target="_blank>
               <span>View It</span>
             </a>
           <?php endif; ?>

@@ -18,7 +18,7 @@
             <h3><?php echo $title ?></h3>
             <?php echo $details ?>
           </div>
-          <h4><?php echo $price ?></h4>
+          <h4><?php //echo $price ?></h4>
         </article>
         
       <?php endwhile ?>
@@ -42,7 +42,7 @@
             <h3><?php echo $title ?></h3>
             <?php echo $details ?>
           </div>
-          <h4><?php echo $price ?></h4>
+          <h4><?php //echo $price ?></h4>
         </article>
         
       <?php endwhile ?>

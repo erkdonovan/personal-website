@@ -30,7 +30,7 @@
   <meta property="og:title" content="Erika Donovan">
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://www.erikadonovan.com">
-  <meta property="og:image" content="<?php echo get_site_url();?>/wp-content/themes/erika-donovan-2016/">
+  <meta property="og:image" content="<?php echo get_site_url();?>/wp-content/themes/erika-donovan-2016/screenshot.png">
   <meta property="og:site_name" content="Erika Donovan">
   <meta property="og:description" content="I like making websites work for YOU!">
   
