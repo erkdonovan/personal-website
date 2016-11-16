@@ -49,7 +49,7 @@
     </div>
   </div>
   <div class="hourlyrate">
-    <div class="container">
+    <div class="container modal-show">
       <?php the_field('hourly_rate_text', 618); ?>
     </div>
   </div>

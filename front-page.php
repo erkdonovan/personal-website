@@ -31,7 +31,7 @@
 
 <!-- CALL TO ACTION STARTS -->
 <section class="calltoaction extrapadding">
-  <div class="container">
+  <div class="container modal-show">
     <?php the_field('call_to_action_1') ?>
   </div>
 </section>
@@ -139,7 +139,7 @@
 
 <!-- CALL TO ACTION STARTS -->
 <section class="calltoaction extrapadding">
-  <div class="container">
+  <div class="container modal-show">
     <?php the_field('call_to_action_2') ?>
   </div>
 </section>

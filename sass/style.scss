@@ -20,6 +20,10 @@ Version: 2.0
 
 // BASIC
 
+html {
+    position: relative;
+}
+
 body, html {
   font-family: 'Open Sans', sans-serif;
   font-size: 10px;
@@ -90,6 +94,39 @@ section:nth-child(even) {
 .flickity-page-dots {
   position: static !important;
   padding-bottom: 20px !important;
+}
+
+.overlayform {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0.5;
+  display: none;
+  z-index: 5;
+}
+
+.modal {
+  width: 100%;
+  max-width: 700px;
+  display: none;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  z-index: 7;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .form {
+    text-align: center;
+    iframe {
+      border: 2px solid black;
+      height: 80vh;
+      width: calc(100% - 60px);
+      max-width: 700px;
+    }
+  }
 }
 
 @import "_media";

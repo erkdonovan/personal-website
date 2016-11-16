@@ -12,5 +12,17 @@ $(function(){
         $('.display__mobile i').toggleClass('fa-times').toggleClass('fa-bars');
     });
 
+    //modal
+    $('.modal-show a').on('click', function(e) {
+      e.preventDefault();
+      $('.modal').show();
+      $('.overlayform').show();
+    });
+
+    $('.overlayform').on('click', function() {
+      $('.modal').hide();
+      $('.overlayform').hide();
+    });
+
 
 });
