@@ -16,6 +16,7 @@ Version: 2.0
 @import 'services';
 @import 'pageparts';
 @import 'about';
+@import 'freelance';
 @import 'posts';
 
 // BASIC
@@ -78,8 +79,14 @@ body, html {
   }
 }
 
-section:nth-child(even) {
+#main section:nth-child(odd) {
   background: $lightcol;
+}
+
+#freelance {
+  section:nth-child(odd) {
+    background: $lightcol;
+  }
 }
 
 /*I have hidden text on my page that is read for screen readers but hidden from viewers*/

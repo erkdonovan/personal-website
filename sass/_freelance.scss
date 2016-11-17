@@ -1,0 +1,25 @@
+// freelance
+
+.freelance {
+  margin-top: 40px;
+  &__left {
+    width: 45%;
+    position: relative;
+    &--image {
+      img {
+        width: 75%;
+      }
+    }
+  }
+  &__right {
+    width: 55%;
+    &--bio {
+      h6 {
+        color: $goldlightcol;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}
