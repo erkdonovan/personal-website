@@ -37,32 +37,6 @@
   </section>
   <!-- CALL TO ACTION ENDS -->
 
-  <section class="freelance-text extrapadding">
-    <div class="container">
-      <h2>About me</h2>
-      <div class="flex-container">
-        <div class="freelance__left">
-          <div class="freelance__left--image">
-            <?php $profileImage = get_field('bio_image'); ?>
-            <img src="<?php echo $profileImage['url'] ?>" alt="<?php echo $profileImage['alt'] ?>">
-          </div>
-        </div> <!-- freelance left ends -->
-
-        <div class="freelance__right">
-          <div class="freelance__right--bio">
-            <?php the_field('freelance_bio'); ?>
-          </div>
-        </div> <!-- freelance right ends -->
-      </div> <!-- flex ends -->
-    </div>
-  </section>
-
-  <!-- PACKAGES STARTS -->
-  <section class="packages" id="services">
-    <?php  get_template_part( 'services' ); ?>
-  </section>
-  <!-- PACKAGES ENDS -->
-
   <!-- FEATURED WORK STARTS -->
   <section class="projects extrapadding" id="work">
     <div class="container">
@@ -70,7 +44,7 @@
       <div class="projects__flex">
         <?php 
 
-          $portfolioArgs = array( 'featured' => 'portfolio', 'posts_per_page' => '3' ) ;
+          $portfolioArgs = array( 'featured' => 'freelance', 'posts_per_page' => '3' ) ;
 
           $portfolioLoop = new WP_Query($portfolioArgs);
 
@@ -106,6 +80,12 @@
     </div>
   </section>
   <!-- FEATURED WORK ENDS -->
+
+  <!-- PACKAGES STARTS -->
+  <section class="packages" id="services">
+    <?php  get_template_part( 'services' ); ?>
+  </section>
+  <!-- PACKAGES ENDS -->
 
   <!-- TESTIMONIAL STARTS -->
   <?php $testImage = get_field('test_bg_image', 7); ?>

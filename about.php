@@ -32,8 +32,8 @@
           ?>
         
           <article>
-            <i class="<?php echo $icon ?>" aria-hidden="true" data-title="<?php echo $aoda ?>"></i>
-            <p class="aoda"><?php echo $aoda ?></p>
+            <i class="<?php echo $icon ?>" aria-hidden="true"></i>
+            <p class="skill-icon"><?php echo $aoda ?></p>
           </article>
         <?php endwhile ?>
       </div> 

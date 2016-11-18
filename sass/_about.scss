@@ -2,6 +2,10 @@
 
 .about {
   margin-top: 40px;
+  .skill-icon {
+    opacity: 0;
+    transition: ease opacity 0.8s;
+  }
   &__left {
     width: 65%;
     position: relative;
@@ -49,22 +53,12 @@
           i {
             position: relative;
             color: $blackcol;
+            transition: ease color 0.8s;
           }
           .devicon-photoshop-plain {
             font-size: 5rem;
           }
-          i[data-title]:hover:after {
-            content: attr(data-title);
-            color: black;
-            font-size: 15px;
-            padding: 5px;
-            font-family: $basicfont;
-            position: absolute;
-            top: -21px;
-            right: -30px;
-            border-radius: 5%;
-          }
-          /*These icons are not from the same family, it needed to be adjusted*/
+           /*These icons are not from the same family, it needed to be adjusted*/
           .fa-map-marker {
             vertical-align: bottom;
           }
