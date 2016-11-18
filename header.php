@@ -79,7 +79,7 @@
     <div class="header__heroimage--content">
       <?php $namelogo = get_field('name_logo'); ?>
       <?php if( $namelogo ): ?>
-        <img src="<?php echo $namelogo['url']; ?>" alt="<?php echo $namelogo['alt']; ?>">
+        <img src="<?php echo $namelogo['url']; ?>" alt="<?php echo $namelogo['alt']; ?>" id="logosig">
       <?php else: ?>
         <h1><?php the_title(); ?></h1>
         <h1><?php echo $tag ?></h1>

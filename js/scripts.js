@@ -126,6 +126,8 @@ $(function(){
     })
   });
 
+  $('#logosig').hide().fadeIn(1500);
+
 
   projects.init();
   blog.init();
