@@ -15,8 +15,6 @@
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css"  href="<?php bloginfo( 'stylesheet_url' ); ?>" />
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/mq.css">
-
-
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
 
@@ -42,6 +40,7 @@
 
 
 <body <?php body_class(); ?>>
+<div class="preloader"></div>
 <div class="overlayform"></div>
 <div class="modal">
   <div class="form">

@@ -1,6 +1,10 @@
 
 $(function(){
 
+  $(window).load(function() {
+     $('.preloader').fadeOut('slow');
+  });
+
 //slide-out nav
     $('.display__mobile i').on('click', function() {
         $('.display__mobile--menu').toggleClass('nav-open');
@@ -126,7 +130,7 @@ $(function(){
     })
   });
 
-  $('#logosig').hide().fadeIn(1500);
+  // $('#logosig').fadeIn(2000);
 
 
   projects.init();

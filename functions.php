@@ -387,19 +387,11 @@ function hackeryou_scripts() {
     null, //version number
     true //load in footer
   );
-
-  wp_enqueue_script(
-    'plugins', //handle
-    get_template_directory_uri() . '/js/plugins.js', //source
-    false, //dependencies
-    null, // version number
-    true //load in footer
-  );
   
   wp_enqueue_script(
     'scripts', //handle
     get_template_directory_uri() . '/js/main.min.js', //source
-    array( 'jquery', 'plugins'  ), //dependencies
+    array( 'jquery' ), //dependencies
     null, // version number
     true //load in footer
   );
